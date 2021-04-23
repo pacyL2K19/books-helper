@@ -47,7 +47,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: myapp_test
+  database: books_helper
   pool: 5
   username: brenden
   password:
