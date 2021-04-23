@@ -49,6 +49,6 @@ test:
   encoding: unicode
   database: books_helper
   pool: 5
-  username: brenden
+  username: user
   password:
   timeout: 5000
