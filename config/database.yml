@@ -19,7 +19,7 @@ development:
   encoding: unicode
   database: myapp_development
   pool: 5
-  username: brenden
+  username: user
   password:
   timeout: 5000
  
