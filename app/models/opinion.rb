@@ -1,2 +1,0 @@
-class Opinion < ApplicationRecord
-end
