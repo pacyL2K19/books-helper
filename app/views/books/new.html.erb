@@ -10,15 +10,23 @@
             <div class="col-12">
                 <div class="row">
                     <div class="col-8 content">
-                        <div class="col-12 border-bottom p-3">
+                        <div class="col-12 border-bottom py-3">
                             <%= link_to "TWEETS", root_path, class: "h4 mr-3 active-link links" %>
                             <%= link_to "PHOTOS", root_path, class: "h4 mr-3 links" %>
                             <%= link_to "VIDEOS", root_path, class: "h4 mr-3 links" %>
                         </div>
+                        <div class="col-12 p-3">
+                            <div class="rounded p-3 form-new-book">
+                                <h1 class="h5 my-2">Tweet about a book</h1>
+                                <%= render "form", book: @book %>
+
+                                <% # link_to "Back", books_path, class: "mx-3" %>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-4 border-left friends">
                         <div class="col-12 border-bottom p-3">
-                            <%= link_to "WHO TO FOLLOW", root_path, class: "h4 mr-3 links" %>
+                            <%= link_to "WHO TO FOLLOW", users_path, class: "h4 mr-3 links" %>
                         </div>
                     </div>
                 </div>
@@ -26,10 +34,3 @@
         </div>
     </div>
 </div>
-
-
-<h1 class="h1">New Book</h1>
-
-<%= render "form", book: @book %>
-
-<%= link_to "Back", books_path %>
