@@ -33,11 +33,19 @@
             height: 800px;
         }
         .links {
-            color: black;
+            color: rgb(68, 64, 64);
             text-decoration: none;
+            font-weight: lighter !important;
+            padding-bottom: 15px;
             &:hover {
-                color: rgb(94, 94, 223);
+                color: rgb(12, 12, 12);
+                font-weight: bold;
             }
+        }
+        .active-link {
+            border-bottom: rgb(104, 104, 248);
+            border-width: 2px;
+            border-bottom-style: solid;
         }
     }
 }
