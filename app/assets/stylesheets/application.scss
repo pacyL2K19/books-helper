@@ -32,5 +32,12 @@
         .content {
             height: 800px;
         }
+        .links {
+            color: black;
+            text-decoration: none;
+            &:hover {
+                color: rgb(94, 94, 223);
+            }
+        }
     }
 }
