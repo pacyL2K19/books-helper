@@ -28,6 +28,8 @@ gem "bootstrap", "~> 4.0"
 gem "bulma-rails", "~> 0.9.1"
 gem "jquery-rails"
 gem "binding_of_caller"
+gem 'hirb'
+gem 'paperclip', '~> 6.1'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", ">= 1.4.4", require: false
