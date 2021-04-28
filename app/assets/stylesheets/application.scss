@@ -13,44 +13,134 @@
  *= require_tree .
  *= require_self
  */
-
  @import "bootstrap";
-.main {
-    background-color: red;
-    height: 100vh;
-    .side-bar {
-        background-color: rgb(55, 55, 61);
-        height: 100vh;
-    }
-    .bar {
-        background-color: rgb(248, 248, 248);
-        height: 100vh;
-        padding: 0;
-        .header {
-            height: 120px;
-        }
-        .content {
-            height: 800px;
-        }
-        .links {
-            color: rgb(68, 64, 64);
-            text-decoration: none;
-            font-weight: lighter !important;
-            padding-bottom: 15px;
-            &:hover {
-                color: rgb(12, 12, 12);
-                font-weight: bold;
-            }
-        }
-        .active-link {
-            border-bottom: rgb(104, 104, 248);
-            border-width: 2px;
-            border-bottom-style: solid;
-        }
 
-        .form-new-book {
-            background-color: white;
-            box-shadow: 0 0 1px gray;            
-        }
-    }
-}
+ $dark-blue: #1c2a3d;
+ $sky-blue: #54ace3;
+ $text-dark: #6c8297;
+ $text-light: #fafcfc;
+ $text-gray: #b3b4b6;
+ $black: #000;
+ 
+ body {
+   font-family: "Poppins", sans-serif;
+   overflow-x: hidden;
+ }
+ 
+ .text-gray {
+   color: $text-gray;
+ }
+ 
+ .bg-custom-side {
+   background-color: $dark-blue;
+ }
+ 
+ .bg-custom-top {
+   background-color: $sky-blue;
+ }
+ 
+ .sidebar-links {
+   transition: all 0.3s ease-in-out;
+ 
+   &__anchor {
+     color: $text-dark;
+     text-transform: uppercase;
+ 
+     &:hover {
+       text-decoration: none;
+     }
+   }
+ 
+   &__icon {
+     fill: $text-dark;
+     width: 20px;
+     height: 20px;
+   }
+ 
+   &:hover {
+     background-color: $sky-blue;
+   }
+ 
+   &:hover &__anchor,
+   &:hover &__icon {
+     color: $text-light;
+     fill: $text-light;
+   }
+ }
+ 
+ .follow {
+   color: $text-light;
+   font-size: 11px;
+ 
+   small {
+     color: $text-dark;
+   }
+ }
+ 
+ .profile-img {
+   transform: scale(1);
+   transition: all 0.5s;
+ 
+   &:hover {
+     transform: scale(1.1);
+   }
+ }
+ 
+ .tweet-pic {
+   width: 4rem;
+   height: 4rem;
+ }
+ 
+ .follow-content {
+   width: 100%;
+ }
+ 
+ .who-to-follow {
+   .follow-content {
+     line-height: 1rem;
+   }
+ }
+ 
+ .user-name-p {
+   color: $black;
+ 
+   &:hover {
+     color: $black;
+   }
+ }
+ 
+ .user-name {
+   color: $text-light;
+   font-size: 18px;
+   text-align: center;
+   transform: translateY(0);
+   text-shadow: 0 1px 2px rgba($color: $black, $alpha: 0.9);
+   transition: all 0.3s ease-in-out;
+ 
+   &:hover {
+     color: $text-light;
+     text-decoration: none;
+     text-shadow: 0 1px 1px rgba($color: $black, $alpha: 0.95);
+     transform: translateY(1px);
+   }
+ }
+ 
+ .notice,
+ .alert {
+   margin-bottom: 4px;
+   width: 100%;
+   height: 30px;
+   text-align: center;
+   padding: 5px;
+   color: dimgrey;
+   font-size: 14px;
+ }
+ 
+ .notice {
+   background-color: #d4f6c6;
+ }
+ 
+ .alert {
+   background-color: #f6cfc6;
+ }
+ 
