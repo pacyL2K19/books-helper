@@ -22,6 +22,12 @@
 
                                 <% # link_to "Back", books_path, class: "mx-3" %>
                             </div>
+                            <div class="rounded p-3 tweets-list">
+                                <h1 class="h5 my-2">Tweet about a book</h1>
+                                <%= render "form", book: @book %>
+
+                                <% # link_to "Back", books_path, class: "mx-3" %>
+                            </div>
                         </div>
                     </div>
                     <div class="col-4 border-left friends">
