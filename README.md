@@ -18,7 +18,7 @@
 - Run `git clone git@github.com:pacyL2K19/books-helper.git`
 - Go to the cloned repository run `cd books-helper`
 
-#### Installe required Gem and Node packages
+#### Install required Gem and Node packages
 
 - In the terminale, run 
     ```
@@ -35,37 +35,32 @@
 
 #### Set up the database tables 
 
-Run `rails db:migrate` and make sure the commande succeded
-
-
-#### Test the tables
-
-- First run `rails c`
-- In the rails console make sure all the tables are working correctly. Run `User`
-- Then create at least one user, one post and one comment Run 
-1. `u = User.create(user_name: 'PLicdj', email: 'paci@gmail.com', password: 'abc123QBC!', password_confirmation: 'abc123QBC!')` Creates a user
-2. `pp User.first` shows details of the first user
+- In `./config/database.yml` file, update the username and the password by yours
+- Run `rails db:create` and make sure the commande succeded
+- Run `rails db:migrate` and make sure the commande succeded
 
 #### Test all in the browser
 
 - Run `$ rails server`
 - In the browser go to http://127.0.0.1:3000/users/new
-- This page should display ⬇️
-- ![screenshot](screenshots/new.png)
-- Create a new user by putting informations inside the text fields
-- In case something went wrong with data validation errors should be displayed like this ⬇️
-- ![screenshot](screenshots/error.png)
-- Next go to http://127.0.0.1:3000/users/1/edit and update informations of the user with id 1 
+- This page should display (for the first loading)
+- ![screenshot](screenshots/login.png)
+- Create a new user by putting informations inside the text fields and importing images for the profile and the cover (Not mandatory)
+- ![screenshot](screenshots/signup.png)
+- After loging in, this main screen should display 
+- ![screenshot](screenshots/mainpage.png)
+- Suggest any book and here we go ...
+- Follow any user on the right-side menu
 
+#### Run the tests
+```
+$ rails db:migrate RAILS_ENV=test
+$ rspec --format documentation
+```
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!
+Contributions, issues and feature requests are welcome following a correct gitflow workflow !
 ## Authors
-
-👤 **Railon Acosta**
-- GitHub: [@railonA](https://github.com/RailonA)
-- Linkedin: [@railonAcosta](https://www.linkedin.com/in/railon-acosta-81265180/)
-- Twitter: [@railonAcosta](https://twitter.com/RailonAcosta)
 
 👤 **Pacifique Linjanja**
 - Github: [@pacyL2K19](https://github.com/pacyL2K19)
