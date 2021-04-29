@@ -7,10 +7,10 @@ class UsersController < ApplicationController
     @user = User.create(signup_params)
     if @user.save
       session[:username] = @user.username
-      flash[:notice] = "Account is created sucessfully"
+      flash[:notice] = 'Account is created sucessfully'
       redirect_to root_path
     else
-      flash[:alert] = "Something went wrong..."
+      flash[:alert] = 'Something went wrong...'
       render new_user_path
     end
   end
@@ -29,11 +29,11 @@ class UsersController < ApplicationController
     @user = current_user
     @user.update(signup_params)
     if @user.save
-      flash[:notice] = "profile updated!"
+      flash[:notice] = 'profile updated!'
       redirect_to root_path(current_user)
     else
-      flash[:alert] = "Something went wrong ..."
-      render "edit"
+      flash[:alert] = 'Something went wrong ...'
+      render 'edit'
     end
   end
 

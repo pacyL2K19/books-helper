@@ -6,17 +6,17 @@ class SessionsController < ApplicationController
 
     if @user
       session[:username] = @user.username
-      flash[:notice] = "successfully signed in"
+      flash[:notice] = 'successfully signed in'
       redirect_to root_path
     else
-      flash.now[:alert] = "Something went wrong..."
-      render "new"
+      flash.now[:alert] = 'Something went wrong...'
+      render 'new'
     end
   end
 
   def destroy
     session[:username] = nil
-    flash[:notice] = "You have successfully logged out"
+    flash[:notice] = 'You have successfully logged out'
     redirect_to sign_in_path
   end
 end

@@ -4,7 +4,7 @@ class FollowingsController < ApplicationController
     if @following.save
       flash[:notice] = "You are following #{User.find(params[:user_id]).fullname}"
     else
-      flash[:alert] = "Something went wrong ..."
+      flash[:alert] = 'Something went wrong ...'
     end
     redirect_to root_path
   end
