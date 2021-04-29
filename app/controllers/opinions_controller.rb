@@ -10,10 +10,10 @@ class OpinionsController < ApplicationController
   def create
     @opinion = current_user.opinions.build(opinion_params)
     if @opinion.save
-      flash[:notice] = 'Opinion was created successfully'
+      flash[:notice] = "Opinion was created successfully"
       redirect_to root_path
     else
-      flash.now[:alert] = 'Something went wrong...'
+      flash.now[:alert] = "Something went wrong..."
     end
   end
 
