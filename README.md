@@ -52,6 +52,8 @@
 - Suggest any book and here we go ...
 - Follow any user on the right-side menu
 
+Run the [Live Demo](https://limitless-reef-60126.herokuapp.com/)
+
 #### Run the tests
 ```
 $ rails db:migrate RAILS_ENV=test
