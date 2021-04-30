@@ -10,7 +10,7 @@ module ApplicationHelper
   def render_flash_messages
     render partial: 'shared/notice', object: flash[:notice] if flash[:notice]
 
-    render partial: 'shared/alert', object: flash[:alert] if flash[:alert]
+    render partial: 'shared/notice', object: flash[:alert] if flash[:alert]
   end
 
   def profile_pic(usr, size = '')
