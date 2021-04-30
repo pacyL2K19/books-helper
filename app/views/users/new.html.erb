@@ -1,39 +1,39 @@
 <%= render "error" %>
 <div class="container">
-  <div class="row form-content">  
+  <div class="row form-content">
     <div class="d-sm-hidden col-md-6 background-left"></div>
-     <div class="col-sm-12 col-md-6">
+    <div class="col-sm-12 col-md-6">
       <h2 class="text-center">Sign Up</h2>
 
 
-<%= form_for(@user) do |f| %>
-  <div class="form-group">
-    <%= f.label :photo, "Username *" %>
-    <%= f.text_field :username, autocomplete: "Create a username", class: "form-control", placeholder: "Username" %>
-  </div>
+      <%= form_for(@user) do |f| %>
+      <div class="form-group">
+        <%= f.label :photo, "Username *" %>
+        <%= f.text_field :username, autocomplete: "Create a username", class: "form-control", placeholder: "Username" %>
+      </div>
 
-  <div class="form-group">
-    <%= f.label :photo, "Full Name *" %>
-    <%= f.text_field :fullname, autocomplete: "Enter full name", class: "form-control", placeholder: "Full name" %>
-  </div>
+      <div class="form-group">
+        <%= f.label :photo, "Full Name *" %>
+        <%= f.text_field :fullname, autocomplete: "Enter full name", class: "form-control", placeholder: "Full name" %>
+      </div>
 
- <% # <h5 class="border-bottom pb-2">Not mandatory</h5> %>
- 
-   <div class="form-group">
-     <%= f.label :photo, "Pick a profile photo" %>
-     <%= f.file_field :photo, class: "form-control" %>
- </div>
+      <% # <h5 class="border-bottom pb-2">Not mandatory</h5> %>
 
-   <div class="form-group">
-   <%= f.label :cover_image, "Pick a cover image" %>
-     <%= f.file_field :cover_image, class: "form-control" %>
- </div>
+      <div class="form-group">
+        <%= f.label :photo, "Pick a profile photo" %>
+        <%= f.file_field :photo, class: "form-control" %>
+      </div>
 
-     <div class="actions">
-    <%= f.submit "Create Account", class: "btn btn-primary" %>
-    <p><small><em>Already have an account?</em></small> <%= link_to "Sign in", sign_in_path %></p>
-</div>
-<% end %>
+      <div class="form-group">
+        <%= f.label :cover_image, "Pick a cover image" %>
+        <%= f.file_field :cover_image, class: "form-control" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Create Account", class: "btn btn-primary" %>
+        <p><small><em>Already have an account?</em></small> <%= link_to "Sign in", sign_in_path %></p>
+      </div>
+      <% end %>
     </div>
   </div>
 </div>
