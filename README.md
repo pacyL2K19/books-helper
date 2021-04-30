@@ -4,6 +4,8 @@
 
 > This project is a Books helper based on Twitter Web App that allows users to share opinions on a specific book made in Ruby On Rails
 
+![screenshot](screenshots/gif.gif)
+[Live Demo](https://limitless-reef-60126.herokuapp.com/)
 ## GET STARTED
 
 #### Requirements 
@@ -46,13 +48,9 @@
 - This page should display (for the first loading)
 - ![screenshot](screenshots/login.png)
 - Create a new user by putting informations inside the text fields and importing images for the profile and the cover (Not mandatory)
-- ![screenshot](screenshots/signup.png)
 - After loging in, this main screen should display 
-- ![screenshot](screenshots/mainpage.png)
 - Suggest any book and here we go ...
 - Follow any user on the right-side menu
-
-Run the [Live Demo](https://limitless-reef-60126.herokuapp.com/)
 
 #### Run the tests
 ```
