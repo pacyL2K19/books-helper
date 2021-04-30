@@ -12,6 +12,9 @@ class OpinionsController < ApplicationController
     if @opinion.save
       flash[:notice] = 'Opinion was created successfully'
       redirect_to root_path
+    elsif opinion_params[:text] == ''
+      flash[:alert] = 'Please type something'
+      redirect_to root_path
     else
       flash.now[:alert] = 'Something went wrong...'
     end
