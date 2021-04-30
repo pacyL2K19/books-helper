@@ -22,7 +22,7 @@
 
 #### Install required Gem and Node packages
 
-- In the terminale, run 
+- In the terminal, run 
     ```
     $ bundle install
     ```
