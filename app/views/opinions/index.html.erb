@@ -1,20 +1,20 @@
 <div class="row">
-	<div class="col">
-		<nav class="navbar navbar-expand-lg navbar-light">
-  			<div class="container">
-  				<%= link_to 'Tweet', '#', class: "navbar-brand active border-bottom border-primary" %>
-    			<ul class="navbar-nav mr-auto">
-      			  <li class="nav-item">
-                  <%= link_to 'Videos', '#', class: "nav-link" %>
-      			</li>
-      			<li class="nav-item">
-        		<%= link_to 'Photos', '#', class: "nav-link" %>
-        
-      			</li>
-    			</ul>
-  			</div>
-		</nav>
-</div>
+    <div class="col">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <%= link_to 'Tweet', '#', class: "navbar-brand active border-bottom border-primary" %>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <%= link_to 'Videos', '#', class: "nav-link" %>
+                    </li>
+                    <li class="nav-item">
+                        <%= link_to 'Photos', '#', class: "nav-link" %>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 </div>
 
 <h3 class="mt-4"> Suggest Book </h3>
@@ -22,9 +22,9 @@
 <div class="card mb-3">
     <div class="card-body">
         <%= form_for(@opinion, url: opinion_path) do |f| %>
-            <%= f.text_field :text, autofocus: true, class: "form-control", placeholder: "Suggest any book by tweet ..." %>
-            <div class="actions">
-          <%= f.submit class: "btn btn-primary float-right m-3" %>
+        <%= f.text_field :text, autofocus: true, class: "form-control", placeholder: "Suggest any book by tweet ..." %>
+        <div class="actions">
+            <%= f.submit class: "btn btn-primary float-right m-3" %>
         </div>
         <% end %>
     </div>
