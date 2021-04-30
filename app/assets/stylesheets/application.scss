@@ -128,18 +128,24 @@ body {
 .notice,
 .alert {
   margin-bottom: 4px;
-  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
   height: 30px;
   text-align: center;
   padding: 5px;
-  color: dimgrey;
   font-size: 14px;
+  z-index: 200;
 }
 
 .notice {
   background-color: #d4f6c6;
+  color: dimgray;
 }
 
 .alert {
   background-color: #f6cfc6;
+  color: red;
 }
