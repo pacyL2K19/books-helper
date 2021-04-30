@@ -44,7 +44,7 @@
 #### Test all in the browser
 
 - Run `$ rails server`
-- In the browser go to http://127.0.0.1:3000/users/new
+- In the browser go to http://127.0.0.1:3000/
 - This page should display (for the first loading)
 - ![screenshot](screenshots/login.png)
 - Create a new user by putting informations inside the text fields and importing images for the profile and the cover (Not mandatory)
